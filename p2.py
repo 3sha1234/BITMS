@@ -1,13 +1,4 @@
-emp={'name':'harika','age':20,'salary':1000000,'company':'infosys','dob':'2000-05-13'}
-print(type(emp))
-print('printing employee data...')
-print(emp)
-print('deleting some of the employee data')
-del emp['name']
-del emp['company']
-print('printing the modified information')
-print(emp)
-print('deleting dictionary')
-del emp
-print('lets try to print it again')
-print(emp)
+my_dict={'apple': 10, 'banana': 20,'angel': 30,'balaji':40,'chennai': 100,'zebra': 120}
+for key, value in my_dict.items():
+    if key[3].lower() == 'a':
+        print(f"the value of '{key}' is {value}")

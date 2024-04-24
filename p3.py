@@ -1,27 +1,16 @@
-dict1={1: 'harika',2: 'mahi',3: 'reshu'}
-pop_key=dict1.pop(2)
-print(dict1)
-print()
+def find_largest_even_odd(numbers):
+    largest_even = float('-inf')
+    largest_odd = float('-inf')
+    
+    for num in numbers:
+        if num % 2 == 0 and num > largest_even:
+            largest_even = num
+        elif num % 2 != 0 and num > largest_odd:
+            largest_odd = num
+    
+    return largest_even, largest_odd
 
-#
-emp={'name':'harika','age':20,'salary':1000000,'company':'infosys','dob':'2000-05-13'}
-for x in emp:
-    print(emp[x])
-print()    
-
-dict1={1: 'harika',2: 'mahi',3: 'reshu'}
-print(sorted(dict1))
-print('--------')
-
-
-dict1={1: 'harika',2: 'mahi',3: 'reshu'}
-dict1_demo=dict1.copy()
-x=dict1_demo.pop(1)
-print(x)
-print(dict1_demo)
-
-
-print(dict1.keys())
-print(dict1.values())
-dict1.update({1: 'vada'})
-print(dict1)
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+largest_even, largest_odd = find_largest_even_odd(numbers)
+print("Largest even number:", largest_even)
+print("Largest odd number:", largest_odd)
