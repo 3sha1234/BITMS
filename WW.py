@@ -1,0 +1,5 @@
+name1=input("please enter your name:")
+print("HELLO")
+print(name1)
+print("AND")
+print("WELCOME!")

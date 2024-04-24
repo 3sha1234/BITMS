@@ -1,0 +1,7 @@
+districts=set(['ooty','banglore','manglore','ballari','udupi'])
+print("\nprinting the original set")
+print(districts)
+print("\nremove some moths from the set")
+districts.remove('ooty')
+print('modified districts')
+print(districts)

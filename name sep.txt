@@ -1,0 +1,3 @@
+name='harika chowdary'
+print(name[::2].split('-'))
+#n=name[::2]

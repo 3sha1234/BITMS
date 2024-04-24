@@ -1,0 +1,7 @@
+districts=set(['ooty','banglore','manglore','ballari','udupi'])
+print("\nprinting the original set")
+print(districts)
+print("\nupdating the original set")
+districts.update(['kovai','chennai','bb'])
+print('modified districts')
+print(districts)
